@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab - HTML structure</title>
+    <style>
+        .data {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .data td, .data th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .data tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .data tr:hover {
+            background-color: #ddd;
+        }
+
+        .data th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #3183af;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1> Lab </h1>
+<h4> HTML structure </h4>
+<h6> Suriya Thaweechat </h6>
+1.attribute
+<table class="data">
+    <tr>
+        <th width="15%">
+            tag
+        </th>
+        <th>
+            attribute
+        </th>
+    </tr>
+    <tr>
+        <td>
+            h
+        </td>
+        <td>
+            h1,h2,h3,h4,h5,h6 กำหนดหัวข้อเรื่องสำคัญสุด ไล่ลงไป
+        </td>
+    </tr>
+    <tr>
+        <td>
+            p
+        </td>
+        <td>
+            align จัดวางตำแหน่ง
+        </td>
+    </tr>
+    <tr>
+        <td>
+            div
+        </td>
+        <td>
+            class ตัวกำหนดชื่อเพื่อไว้เรียกใช้งาน<br>
+            id ตัวกำหนดชื่อที่เฉพาะเจาะจงไม่ซ้ำไว้เรียกใช้งาน<br>
+            style ใช้กำหนดลักษณะแบบเฉพาะ<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            img
+        </td>
+        <td>
+            align ระบุการจัดตำแหน่งของภาพให้เป็นไปตามองค์ประกอบโดยรอบ
+            alt text ระบุข้อความสำรองสำหรับภาพ
+            border ระบุความกว้างของเส้นขอบรอบภาพ
+            crossorigin anonymous
+            use-credentials อนุญาตให้ภาพจากเว็บไซต์ของบุคคลที่สามที่อนุญาตให้เข้าถึงข้ามจุดที่จะใช้กับผืนผ้าใบ
+            height ระบุความสูงของภาพ
+            hspace ระบุช่องว่างด้านซ้ายและด้านขวาของภาพ
+            ismap ระบุภาพเป็นฝั่งเซิร์ฟเวอร์ภาพแมป
+            longdesc ระบุ URL ไปยังรายละเอียดของภาพ
+            src ระบุ URL ของภาพ
+            usemap ระบุภาพเป็นฝั่งไคลเอ็นต์ภาพแมป
+            vspace ระบุช่องว่างด้านบนและด้านล่างของภาพ
+            width ระบุความกว้างของภาพ
+        </td>
+    </tr>
+    <tr>
+        <td>
+            a
+        </td>
+        <td>
+            link กำหนดตำแหน่งที่ตั้งที่จะไป
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ul
+        </td>
+        <td>
+            compact ระบุว่ารายการควรจะทำให้มีขนาดเล็กกว่าปกติ<br>
+            type ระบุชนิดของเครื่องหมายที่จะใช้ในรายการ
+        </td>
+    </tr>
+    <tr>
+        <td>
+            ol
+        </td>
+        <td>
+            compact ระบุว่ารายการควรจะทำให้มีขนาดเล็กกว่าปกติ<br>
+            reversed ระบุว่าการสั่งซื้อรายการที่ควรจะลงมา (9,8,7...)<br>
+            start ระบุค่าเริ่มต้นของรายการสั่งซื้อ<br>
+            type ระบุชนิดของเครื่องหมายที่จะใช้ในรายการ<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            table
+        </td>
+        <td>
+            align ระบุการจัดตำแหน่งของตารางตามข้อความรอบ<br>
+            bgcolor ระบุสีพื้นหลังของตาราง<br>
+            border ระบุหรือไม่ว่าตารางจะถูกใช้เพื่อวัตถุประสงค์ในการจัดวาง<br>
+            cellpadding ระบุช่องว่างระหว่างผนังเซลล์และเนื้อหาเซลล์<br>
+            cellspacing ระบุช่องว่างระหว่างเซลล์<br>
+            frame ระบุว่าส่วนของเส้นขอบนอกที่ควรจะมองเห็น<br>
+            rules ระบุส่วนของพรมแดนภายในที่ควรจะมองเห็น<br>
+            sortable ระบุว่าตารางที่ควรจะจัดเรียง<br>
+            summary ระบุสรุปเนื้อหาของตารางที่<br>
+            width ระบุความกว้างของตาราง<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            form
+        </td>
+        <td>
+            accept ระบุรายการคั่นด้วยเครื่องหมายจุลภาคประเภทไฟล์ที่เซิร์ฟเวอร์รับ (ที่สามารถส่งผ่านการอัปโหลดไฟล์)<br>
+            accept-charset กำหนดการเข้ารหัสตัวอักษรที่จะใช้สำหรับการส่งแบบฟอร์ม<br>
+            action ระบุว่าจะส่งแบบฟอร์มข้อมูลเมื่อส่งแบบฟอร์ม<br>
+            autocomplete ระบุว่ารูปแบบที่ควรจะมีการเติมข้อความอัตโนมัติหรือปิด<br>
+            enctype ระบุว่าข้อมูลรูปแบบที่ควรจะเข้ารหัสเมื่อส่งไปยังเซิร์ฟเวอร์ (เฉพาะ method="post" )<br>
+            method ระบุวิธีการ HTTP ที่จะใช้เมื่อการส่งแบบฟอร์มข้อมูล<br>
+            name ระบุชื่อของฟอร์ม<br>
+            novalidate ระบุว่ารูปแบบที่ไม่ควรได้รับการตรวจสอบเมื่อส่ง<br>
+            target ระบุตำแหน่งที่จะแสดงการตอบสนองที่ได้รับหลังการส่งแบบฟอร์ม<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            button
+        </td>
+        <td>
+            autofocus ระบุว่าปุ่มควรมุ่งเน้นโดยอัตโนมัติได้รับเมื่อโหลดหน้าเว็บ<br>
+            disabled ระบุว่าปุ่มควรจะปิดการใช้งาน<br>
+            form ระบุหนึ่งหรือมากกว่าหนึ่งรูปแบบปุ่มเป็น<br>
+            formaction ระบุว่าจะส่งแบบฟอร์มข้อมูลเมื่อส่งแบบฟอร์ม เฉพาะ type="submit"<br>
+            formenctype ระบุว่าข้อมูลรูปแบบควรมีการเข้ารหัสก่อนที่จะส่งไปยังเซิร์ฟเวอร์ เฉพาะ type="submit"<br>
+            formmethod ระบุวิธีการส่งรูปแบบข้อมูล (ซึ่งวิธีการที่จะใช้ HTTP) เฉพาะ type="submit"<br>
+            formnovalidate ระบุว่ารูปแบบข้อมูลที่ไม่ควรได้รับการตรวจสอบการส่ง เฉพาะ type="submit"<br>
+            formtarget ระบุตำแหน่งที่จะแสดงการตอบสนองหลังจากส่งแบบฟอร์ม เฉพาะ type="submit"<br>
+            name ระบุชื่อสำหรับปุ่ม<br>
+            type ระบุชนิดของปุ่ม<br>
+            value ระบุค่าเริ่มต้นสำหรับปุ่ม<br>
+        </td>
+    </tr>
+</table>
+
+2.differentiation tag
+<table class="data">
+    <thead>
+    <tr>
+        <th width="15%">
+            tag
+        </th>
+        <th>
+            ความเหมือน
+        </th>
+        <th>
+            ความแตกต่าง
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            &lt;hr&gt; &amp; &lt;br&gt;,
+        </td>
+        <td>
+            ขึ้นบรรทัดใหม่เหมือนกัน
+        </td>
+        <td>
+            hr จะมีเส้นขีดด้านล่าง ,br จะขึ้นบรรทัดใหม่แต่ไม่มีเส้นขีด
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;ul&gt; &amp; &lt;ol&gt;,
+        </td>
+        <td>
+            แสดงข้อมูลเป็นลิสต์
+        </td>
+        <td>
+            ul ลิสต์รายการ แบบไม่มีลำดับ โดยใช้สัญลักษณ์กำกับ (Unordered List หรือ Bullet List)<br>
+            ol ลิสต์รายการ แบบมีลำดับ (Ordered List)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;select&gt; &amp; &lt;checkbox&gt; &amp; &lt;radio button&gt;,
+        </td>
+        <td>
+            เป็นการเลือกข้อมูล
+        </td>
+        <td>
+            แต่ถ้าข้อมูลที่ต้องเลือกมีเยอะ ควรเลือกใช้ select<br>
+            แต่ถ้าผู้ใช้สามารถเลือกได้มากกว่าหนึ่งอย่างให้ใช้ checkbox<br>
+            ถ้าผู้ใช้เลือกได้แค่อย่างเดียวให้ใช้ radio button<br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;div&gt; &amp; &lt;span&gt;,
+        </td>
+        <td>
+            เป็นการจัดกลุ่มข้อมูล
+        </td>
+        <td>
+            div จะมีคุณสมบัติ Style Display:block อยู่ในตัว ทำให้ทุก Element ที่อยุ่ต่อจากแท็ก Div
+            จะถูกดันไปอยู่บรรทัดใหม่โดยอัตโนมัติ<br>
+            span จะเป็นการจัดกลุ่มข้อความเป็นก้อนเหมือน div แต่จะไม่ขึ้นบรรทัดใหม่ให้
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;script&gt; &amp; &lt;style&gt;,
+        </td>
+        <td>
+            เป็นtag html
+        </td>
+        <td>
+            style ใช้กําหนดคุณลักษณะ เช่น สี ขนาด font ตำแหน่งการจัดวาง ให้กับ HTML element ต่างๆ
+            โดยจะกำหนดในหน้าเว็บเพจนั้นๆ หรือสร้างเป็นไฟล์ style sheet แยกเป็นอีกไฟล์ แล้วเรียกใช้อีกที<br>
+            ส่วน script เช่น javascript, vbscript เป็น function เพื่อใช้งาน หรือจะเขียนฟังก์ชั่นเก็บเป็นไฟล์ .js
+            ก่อนแล้วค่อยเรียกใช้งานก็ได้
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+
+3.input Type
+<table class="data">
+    <thead>
+    <tr>
+        <th width="15%">
+            type
+        </th>
+        <th>
+            ลักษณะ
+        </th>
+        <th>
+            ตัวอย่าง
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            button
+        </td>
+        <td>
+            ปุ่มกด
+        </td>
+        <td>
+            <input type="button" value="ปุ่มกด"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            checkbox
+        </td>
+        <td>
+            ช่องติ๊กถูก เอาไว้สำหรับเลือกหลายรายการ
+        </td>
+        <td>
+            สัตว์ที่ชอบ
+            <input type="checkbox" name="checkbox" value="1"/>หมา
+            <input type="checkbox" name="checkbox" value="2"/>แมว
+            <input type="checkbox" name="checkbox" value="3"/>นก
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            color
+        </td>
+        <td>
+            เลือกสี
+        </td>
+        <td>
+            <input type="color"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            date
+        </td>
+        <td>
+            เลือกวันที่
+        </td>
+        <td>
+            <input type="date"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            datetime-local
+        </td>
+        <td>
+            เลือกวันที่
+        </td>
+        <td>
+            <input type="datetime-local"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            email
+        </td>
+        <td>
+            อีเมลล์
+        </td>
+        <td>
+            <input type="email"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            file
+        </td>
+        <td>
+            ไฟล์ข้อมูล เช่นรูปภาพ เพลง เอกสาร
+        </td>
+        <td>
+            <input type="file"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            hidden
+        </td>
+        <td>
+            ซ่อน
+        </td>
+        <td>
+            <input type="hidden"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            image
+        </td>
+        <td>
+            รูปภาพ
+        </td>
+        <td>
+            <input type="image"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            month
+        </td>
+        <td>
+            เดือน
+        </td>
+        <td>
+            <input type="month"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            number
+        </td>
+        <td>
+            อนุญาติเฉพาะข้อมูลตัวเลข
+        </td>
+        <td>
+            <input type="number"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            password
+        </td>
+        <td>
+            รหัสผ่าน โดยจะแสดงหน้าจอแสดงผลเป็น *
+        </td>
+        <td>
+            <input type="password"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            radio
+        </td>
+        <td>
+            การเลือกข้อมูลเหมาะสำหรับการเลือกเฉพาะข้อใดข้อหนึ่ง
+        </td>
+        <td>
+            <input type="radio" value="ชาย" name="radio"/>ชาย
+            <input type="radio" value="หญิง" name="radio"/>หญิง
+        </td>
+    </tr>
+    <tr>
+        <td>
+            range
+        </td>
+        <td>
+            การเลือกข้อมูลระหว่าง ถึง เป็นต้น
+        </td>
+        <td>
+            <input type="range"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            reset
+        </td>
+        <td>
+            ปุ่มรีเซตข้อมูลในฟอร์ม
+        </td>
+        <td>
+            <input type="reset"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            search
+        </td>
+        <td>
+            ค้นหา
+        </td>
+        <td>
+            <input type="search"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            submit
+        </td>
+        <td>
+            ปุ่มส่งข้อมูลในฟอร์ม
+        </td>
+        <td>
+            <input type="submit">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            tel
+        </td>
+        <td>
+            ช่องกรอกข้อมูลเบอร์โทรศัพท์
+        </td>
+        <td>
+            <input type="tel"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            text
+        </td>
+        <td>
+            รับข้อมูล
+        </td>
+        <td>
+            <input type="text"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            time
+        </td>
+        <td>
+            เป็นการเลือกข้อมูลแบบเวลา
+        </td>
+        <td>
+            <input type="time"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            url
+        </td>
+        <td>
+            ที่อยู่ เว็บไซต์
+        </td>
+        <td>
+            <input type="url"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            week
+        </td>
+        <td>
+            เลือกข้อมูล สัปดาห์ ที่ของ ปี
+        </td>
+        <td>
+            <input type="week"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+Lab เสริม
+<table class="data">
+    <thead>
+    <tr>
+        <th width="15%">
+           tag
+        </th>
+        <th>
+            คำอธิบาย
+        </th>
+        <th>
+           ตัวอย่าง
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            &lt;strong&gt; &lt;/strong&gt;
+        </td>
+        <td>
+            ใช้กำหนดให้ข้อความถูกเน้นย้ำ
+        </td>
+        <td>
+            <strong>ตัวอย่าง</strong>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;label&gt; &lt;/label&gt;
+        </td>
+        <td>
+            ใช้กำหนด ป้ายชื่อ ให้กับ ช่องรับข้อมูล
+        </td>
+        <td>
+            <label>ตัวอย่าง</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;del&gt; &lt;/del&gt;
+        </td>
+        <td>
+            ใช้ขีดฆ่าข้อความ
+        </td>
+        <td>
+            <del>ตัวอย่าง</del>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;b&gt; &lt;/b&gt;
+        </td>
+        <td>
+            ใช้กำหนดให้ข้อความเป็นตัวหนา
+        </td>
+        <td>
+            <b>ตัวอย่าง</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;em&gt; &lt;/em&gt;
+        </td>
+        <td>
+            ใช้กำหนดให้ข้อความเป็น วลี หรือ คำพูด
+        </td>
+        <td>
+            <em>ตัวอย่าง</em>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;mark&gt; &lt;/mark&gt;
+        </td>
+        <td>
+            ใช้กำหนดไฮไลท์ข้อความ
+        </td>
+        <td>
+            <mark>ตัวอย่าง</mark>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;i&gt; &lt;/i&gt;
+        </td>
+        <td>
+            ใช้กำหนดให้ข้อความเป็นตัวเอียง
+        </td>
+        <td>
+            <i>ตัวอย่าง</i>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;sub&gt; &lt;/sub&gt;
+        </td>
+        <td>
+            ใช้กำหนดให้ข้อความเป็นตัวยกขึ้น ( sup ย่อมาจาก SuperScript )
+        </td>
+        <td>
+            <sub>ตัวอย่าง</sub>1
+        </td>
+    </tr>
+    <tr>
+        <td>
+            &lt;sup&gt; &lt;/sub&gt;
+        </td>
+        <td>
+            ใช้กำหนดให้ข้อความเป็นตัวห้อยลง ( sub ย่อมาจาก SubScript )
+        </td>
+        <td>
+            <sup>ตัวอย่าง</sup>1
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>
+<br>
