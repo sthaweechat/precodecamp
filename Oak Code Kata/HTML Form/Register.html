@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create an Account</title>
+    <style>
+        .label {
+            padding-top:10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Create an Account</h1>
+
+<form action="/html-css-practice-test/" method="POST">
+    <div class="label">
+        <label>Email:</label>
+        <br>
+        <input type="text" name="email">
+    </div>
+
+    <div class="label">
+        <label>Password:</label>
+        <br>
+        <input type="password" name="password">
+    </div>
+
+    <div class="label">
+        <label>Age:</label>
+        <br>
+        <select name="age">
+            <option value="">Select Age</option>
+            <option value="g1">-18</option>
+            <option value="g2">18 to 30</option>
+            <option value="g3">31 to 39</option>
+            <option value="g4">40+</option>
+        </select>
+    </div>
+
+    <div class="label">
+        <label>Tell us a little about yourself:</label>
+        <br>
+        <textarea name="about" rows="5" cols="50"></textarea>
+    </div>
+
+    <div class="label">
+        <input type="checkbox" name="accepts" value="yes"> I agree to the
+        <a href="#" target="_blank">terms of service</a>
+    </div>
+
+    <div class="label">
+        <input type="submit" value="Sign up">
+    </div>
+</form>
+</body>
+</html>
